@@ -17,12 +17,6 @@ namespace Strategy
             _flyBehavior = flyBehavior;
             _quackBehavior = quackBehavior;
         }
-
-        protected Duck(FlyNoWay flyNoWay)
-        {
-            this.flyNoWay = flyNoWay;
-        }
-
         public void Quack()
         {
             _quackBehavior.Quack();
